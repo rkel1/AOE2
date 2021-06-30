@@ -12,8 +12,8 @@ DROP VIEW IF EXISTS totalCounts
 GO
 
 CREATE VIEW totalCounts AS SELECT 
-	(SELECT COUNT(*) FROM matches)  AS matchesAnalysed, -- total matches analysed
-	(SELECT COUNT(*) FROM leaderboard) AS playersAnalysed -- total players analysed
+	(SELECT COUNT(DISTINCT match_id) FROM matches)  AS matchesAnalysed, -- total matches analysed
+	(SELECT COUNT(DISTINCT profile_id) FROM leaderboard) AS playersAnalysed -- total players analysed
 
 GO
 
@@ -28,5 +28,23 @@ INTO ratingDistribution
 FROM leaderboard
 GROUP BY rating
 ORDER BY rating ASC
+
+
+
+------------------------------------------------------------------------------------
+--Biggest civ wins (i.e. which civ matchup has greatest departure from 50% win rate)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AOE2 - Richard K Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Richard K</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Project Overviews</a></li>
+							<li><a href="oceanography.html">Oceanography</a></li>
+							<li class="active"><a href="aoe2.html">AOE2</a></li>
+							<!-- <li><a href="reference.html">Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href=https://www.linkedin.com/in/richard-kelson-71195863/ class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/rkel1/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Age of Empires 2</h1>
+								</header>
+
+								
+									<p>
+										<b>Environments:</b> <i>Jupyter Notebook, Microsoft SQL Server Management Studio, Tableau</i> <br />
+										<b>Skills:</b> <i>Data retrieval, cleaning and transformation, analysis, machine learning, visualisation</i>
+									</p>
+							
+
+								<!-- Text stuff -->
+									<h2>Introduction</h2>
+
+									<p>
+										Age of Empires 2: Definitive Edition (AOE2) is a real-time strategy game that was first launched in 1999 as Age of Empires. It is one of the few games
+										from that era that is still popular today, with some 46,000 multiplayer players active on the updated Definitive Edition released in 2019. In the game,
+										each player chooses one of 35 civilizations and battles it out with another player, building first a base, then an army to attack their opponent. Every
+										day tens of thousands of games are played. Since the most recent patch (3rd May 2021), over 1.4 million games have been played.
+									</p>
+
+									<p><span class="image left"><img src="images/aoeRatings.png"></image></span>In this analysis, I looked at only those games that were ranked and 1v1 (instead of unranked games or team games). To get details of the games and players,
+										the <a href="aoe2.net">aoe2.net</a> website provides a helpful API. However, this interface only allows the details of 10,000 players, or 1,000 matches,
+										to be downloaded at one time.</p> <br />
+
+
+									<p>
+										The project process was as follows. First, a Python script acts as a webcrawler to get successive chunks of 1,000 matches (or 10,000 players). The
+										resulting .json files are joined together using SQL Server, and further analysis such as a breakdown of statistics by countries is also performed
+										in SQL. Finally, the results of the analysis are visualised using Tableau.
+									</p>
+
+									<p>
+										In addition, the outcomes of matches are predicted based on the civilization matchup and the rating difference of the players. This is done using a 
+										machine learning algorithm in Python that applies a Support Vector Machine, after some further pre-processing in SQL. 
+									</p>
+
+									<ul class="actions">
+										<li><a href="https://github.com/rkel1/AOE2" class="button primary">Python/SQL</a></li>
+										<li><a href="https://public.tableau.com/app/profile/richard.k/viz/AgeofEmpires2Viz/Dashboard" class="button">Tableau</a></li>
+									</ul>
+									
+									
+
+									<footer id="footer">
+										<!--
+										<section>
+											<form method="post" name="myemailform" action="form-to-email.php">
+												<div class="fields">
+													<div class="field">
+														<label for="name">Name</label>
+														<input type="text" name="name" id="name" />
+													</div>
+													<div class="field">
+														<label for="email">Email</label>
+														<input type="text" name="email" id="email" />
+													</div>
+													<div class="field">
+														<label for="message">Message</label>
+														<textarea name="message" id="message" rows="3"></textarea>
+													</div>
+												</div>
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+												</ul>
+											</form>
+										</section> -->
+										<section class="split contact">
+											<section class="alt">
+												<h3>Address</h3>
+												<p>Montreal, Quebec<br />
+												Canada</p>
+											</section>
+											<section>
+												<h3>Phone</h3>
+												<p>(438) 792-6738</p>
+											</section>
+											<section>
+												<h3>Email</h3>
+												<p>richardlkelson@gmail.com</p>
+											</section>
+											<section>
+												<h3>Social</h3>
+												<ul class="icons alt">
+													<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+													<li><a href=https://www.linkedin.com/in/richard-kelson-71195863/ class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+													<li><a href="https://github.com/rkel1?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+												</ul>
+											</section>
+										</section>
+									</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Richard Kelson 2021</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
